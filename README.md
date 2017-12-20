@@ -1,2 +1,8 @@
 # MSIFPCore
-Microsoft Visual Studio International Pack NetStandard
+## Just take Microsoft Visual Studio International Pack to Net Standard
+
+## These code belong to Microsoft Corporation.
+
+[Microsoft Visual Studio International Pack 1.0 SR1](https://www.microsoft.com/en-us/download/details.aspx?id=15251)
+
+[Microsoft Visual Studio International Feature Pack 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18970)
