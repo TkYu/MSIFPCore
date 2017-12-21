@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Globalization;
 using Microsoft.International.Converters;
+using Microsoft.International.Formatters;
 
 namespace MSIFPCore
 {
@@ -7,9 +10,7 @@ namespace MSIFPCore
     {
         static void Main(string[] args)
         {
-            string input = "arigatougozaimasu";
-            string output = KanaConverter.RomajiToHiragana(input);
-            Console.WriteLine(output);
+            Console.WriteLine("The representation for number 123.45 in Japanese Standard format is " + EastAsiaNumericFormatter.FormatWithCulture("L", 123.45, null, new CultureInfo("ja")));
         }
     }
 }

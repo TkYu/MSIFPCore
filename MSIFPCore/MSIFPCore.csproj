@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ChineseConverter\ChineseConverter.csproj" />
     <ProjectReference Include="..\ChnCharInfo\ChnCharInfo.csproj" />
+    <ProjectReference Include="..\EastAsiaNumericFormatter\EastAsiaNumericFormatter.csproj" />
     <ProjectReference Include="..\JpnKanaConversion\JpnKanaConversion.csproj" />
   </ItemGroup>
 

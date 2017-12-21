@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChineseConverter", "Chinese
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JpnKanaConversion", "JpnKanaConversion\JpnKanaConversion.csproj", "{234A9ACA-552C-4078-9FC7-B17D4443EACE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EastAsiaNumericFormatter", "EastAsiaNumericFormatter\EastAsiaNumericFormatter.csproj", "{E6860E8C-FC5D-4A00-9A4B-5B6E5244B2D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6860E8C-FC5D-4A00-9A4B-5B6E5244B2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6860E8C-FC5D-4A00-9A4B-5B6E5244B2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6860E8C-FC5D-4A00-9A4B-5B6E5244B2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6860E8C-FC5D-4A00-9A4B-5B6E5244B2D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
