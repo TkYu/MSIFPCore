@@ -18,7 +18,7 @@ namespace Microsoft.International.Converters
     {
         private StateMachineConfig stateMachineConfig;
         private ConversionTableConfig conersionTableConfig;
-
+        /// <exclude />
         [XmlElement("StateMachineConfig", Form = XmlSchemaForm.Unqualified)]
         public StateMachineConfig StateMachineConfig
         {
