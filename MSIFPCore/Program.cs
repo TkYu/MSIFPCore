@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.International.Converters.TraditionalChineseToSimplifiedConverter;
+using Microsoft.International.Converters;
 
 namespace MSIFPCore
 {
@@ -7,7 +7,9 @@ namespace MSIFPCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(ChineseConverter.Convert("头发发财",ChineseConversionDirection.SimplifiedToTraditional));
+            string input = "arigatougozaimasu";
+            string output = KanaConverter.RomajiToHiragana(input);
+            Console.WriteLine(output);
         }
     }
 }

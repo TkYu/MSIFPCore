@@ -1,0 +1,1338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AutoConverterConfig>
+<StateMachineConfig EntryState="0" CharSet="[aiueoynbhjmprvzfgqdsctklwx]">
+  <State ID="0">
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aiueo]</Regex>   
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="1">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="2">
+      <InputValidators>
+        <Regex>[n]</Regex>
+      </InputValidators>
+      <Actions>
+      <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="4">
+      <InputValidators>
+        <Regex>[bhjmprvz]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="5">
+      <InputValidators>
+        <Regex>[fgq]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="6">
+      <InputValidators>
+        <Regex>[ds]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="7">
+      <InputValidators>
+        <Regex>[c]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="8">
+      <InputValidators>
+        <Regex>[t]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="9">
+      <InputValidators>
+        <Regex>[k]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="10">
+      <InputValidators>
+        <Regex>[l]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="11">
+      <InputValidators>
+        <Regex>[w]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="12">
+      <InputValidators>
+        <Regex>[x]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+
+  <State ID="1" >
+    <StateTransition ID="1">
+      <InputValidators>
+        <Regex>y</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="2" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aiueo]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+       <Action>ConvertToOutput</Action>
+       <Action>Clear</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="3">
+      <InputValidators>
+        <Regex>[n]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="4">
+      <InputValidators>
+        <Regex>[bhjmprvz]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="5">
+      <InputValidators>
+        <Regex>[fgq]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>ConvertToOutput</Action>
+       <Action>Clear</Action>
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="6">
+      <InputValidators>
+        <Regex>[ds]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>ConvertToOutput</Action>
+       <Action>Clear</Action>
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="7">
+      <InputValidators>
+        <Regex>[c]</Regex>
+      </InputValidators>
+     <Actions> 
+      <Action>ConvertToOutput</Action>
+      <Action>Clear</Action>
+      <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="8">
+      <InputValidators>
+        <Regex>[t]</Regex>
+      </InputValidators>
+  <Actions>    
+    <Action>ConvertToOutput</Action>
+    <Action>Clear</Action>
+    <Action>AppendInput</Action>
+  </Actions>
+    </StateTransition>
+    <StateTransition ID="9">
+      <InputValidators>
+        <Regex>[k]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>Append(n)</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="10">
+      <InputValidators>
+        <Regex>[l]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>ConvertToOutput</Action>
+      <Action>Clear</Action>
+      <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="11">
+      <InputValidators>
+        <Regex>[w]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>ConvertToOutput</Action>
+       <Action>Clear</Action>
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="12">
+      <InputValidators>
+        <Regex>[x]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="3" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aiueo]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>Append(n)</Action>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="2">
+      <InputValidators>
+        <Regex>[n]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="4">
+      <InputValidators>
+        <Regex>[bhjmprvz]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="5">
+      <InputValidators>
+        <Regex>[fgq]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="6">
+      <InputValidators>
+        <Regex>[ds]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="7">
+      <InputValidators>
+        <Regex>[c]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="8">
+      <InputValidators>
+        <Regex>[t]</Regex>
+      </InputValidators>
+    <Actions>  
+      <Action>AppendInput</Action>
+    </Actions>
+    </StateTransition>
+    <StateTransition ID="9">
+      <InputValidators>
+        <Regex>[k]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="10">
+      <InputValidators>
+        <Regex>[l]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="11">
+      <InputValidators>
+        <Regex>[w]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="12">
+      <InputValidators>
+        <Regex>[x]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>Clear</Action>
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="4" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="4">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="5" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition> 
+    <StateTransition ID="5">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[wy]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="6" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="6">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[hwy]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="7" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="7">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[hy]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="8" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="8">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[hswy]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="9" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="9">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="14">
+      <InputValidators>
+        <Regex>[w]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="10" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="10">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="14">
+      <InputValidators>
+        <Regex>[w]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="15">
+      <InputValidators>
+        <Regex>[t]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="17">
+      <InputValidators>
+        <Regex>[k]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="11" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="11">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[h]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="18">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="12" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeioun]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="12">
+      <InputValidators>
+        <Regex>[#History(-1)#]</Regex>
+        <Regex>[^#History(-2)#]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="13">
+      <InputValidators>
+        <Regex>[y]</Regex>
+      </InputValidators>
+     <Actions> 
+       <Action>AppendInput</Action>
+     </Actions>
+    </StateTransition>
+    <StateTransition ID="14">
+      <InputValidators>
+        <Regex>[w]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="17">
+      <InputValidators>
+        <Regex>[k]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+    <StateTransition ID="19">
+      <InputValidators>
+        <Regex>[t]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="13" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[aeiou]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="14" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[a]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="15" >
+    <StateTransition ID="16">
+      <InputValidators>
+        <Regex>[s]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="16" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[u]</Regex>
+      </InputValidators>
+      <Actions><Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="17" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[ae]</Regex>
+      </InputValidators>
+      <Actions><Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="18" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[ei]</Regex>
+      </InputValidators>
+      <Actions>
+        <Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+
+
+  <State ID="19" >
+    <StateTransition ID="0">
+      <InputValidators>
+        <Regex>[u]</Regex>
+      </InputValidators>
+      <Actions><Action>AppendInput</Action>
+        <Action>ConvertToOutput</Action>
+        <Action>Clear</Action>
+      </Actions>
+    </StateTransition>
+  </State>
+  
+</StateMachineConfig>
+ 
+<ConversionTable>
+  <Conversion Input = "a" Output = "あ"/>
+  <Conversion Input = "la" Output = "ぁ"/>
+  <Conversion Input = "xa" Output = "ぁ"/>
+  <Conversion Input = "li" Output = "ぃ"/>
+  <Conversion Input = "lyi" Output = "ぃ"/>
+  <Conversion Input = "xi" Output= "ぃ"/>
+  <Conversion Input = "xyi" Output= "ぃ"/>
+  <Conversion Input = "i" Output= "い"/>
+  <Conversion Input = "yi" Output= "い"/>
+  <Conversion Input="ye" Output = "いぇ"/>
+  <Conversion Input="lu" Output = "ぅ"/>
+  <Conversion Input="xu" Output = "ぅ"/>
+  <Conversion Input="u" Output = "う"/>
+  <Conversion Input="whu" Output = "う"/>
+  <Conversion Input="wu" Output = "う"/>
+  <Conversion Input="wha" Output = "うぁ"/>
+  <Conversion Input="wi" Output = "うぃ"/>
+  <Conversion Input="we" Output = "うぇ"/>
+  <Conversion Input="whe" Output = "うぇ"/>
+  <Conversion Input="who" Output = "うぉ"/>
+  <Conversion Input="le" Output = "ぇ"/>
+  <Conversion Input="lye" Output = "ぇ"/>
+  <Conversion Input="xe" Output = "ぇ"/>
+  <Conversion Input="xye" Output = "ぇ"/>
+  <Conversion Input="e" Output = "え"/>
+  <Conversion Input="lo" Output = "ぉ"/>
+  <Conversion Input="xo" Output = "ぉ"/>
+  <Conversion Input="o" Output = "お"/>
+  <Conversion Input="ka" Output = "か"/>
+  <Conversion Input="ga" Output = "が"/>
+  <Conversion Input="ki" Output = "き"/>
+  <Conversion Input="kyi" Output = "きぃ"/>
+  <Conversion Input="kye" Output = "きぇ"/>
+  <Conversion Input="kya" Output = "きゃ"/>
+  <Conversion Input="kyu" Output = "きゅ"/>
+  <Conversion Input="kyo" Output = "きょ"/>
+  <Conversion Input="gi" Output = "ぎ"/>
+  <Conversion Input="gyi" Output = "ぎぃ"/>
+  <Conversion Input="gye" Output = "ぎぇ"/>
+  <Conversion Input="gya" Output = "ぎゃ"/>
+  <Conversion Input="gyu" Output = "ぎゅ"/>
+  <Conversion Input="gyo" Output = "ぎょ"/>
+  <Conversion Input="cu" Output = "く"/>
+  <Conversion Input="ku" Output = "く"/>
+  <Conversion Input="qu" Output = "く"/>
+  <Conversion Input="kwa" Output = "くぁ"/>
+  <Conversion Input="qa" Output = "くぁ"/>
+  <Conversion Input="qwa" Output = "くぁ"/>
+  <Conversion Input="qi" Output = "くぃ"/>
+  <Conversion Input="qwi" Output = "くぃ"/>
+  <Conversion Input="qyi" Output = "くぃ"/>
+  <Conversion Input="qwu" Output = "くぅ"/>
+  <Conversion Input="qe" Output = "くぇ"/>
+  <Conversion Input="qo" Output = "くぉ"/>
+  <Conversion Input="qya" Output = "くゃ"/>
+  <Conversion Input="qyu" Output = "くゅ"/>
+  <Conversion Input="gu" Output = "ぐ"/>
+  <Conversion Input="gwa" Output = "ぐぁ"/>
+  <Conversion Input="gwi" Output = "ぐぃ"/>
+  <Conversion Input="gwu" Output = "ぐぅ"/>
+  <Conversion Input="gwe" Output = "ぐぇ"/>
+  <Conversion Input="gwo" Output = "ぐぉ"/>
+  <Conversion Input="ke" Output = "け"/>
+  <Conversion Input="ge" Output = "げ"/>
+  <Conversion Input="co" Output = "こ"/>
+  <Conversion Input="ko" Output = "こ"/>
+  <Conversion Input="go" Output = "ご"/>
+  <Conversion Input="sa" Output = "さ"/>
+  <Conversion Input="za" Output = "ざ"/>
+  <Conversion Input="ci" Output = "し"/>
+  <Conversion Input="shi" Output = "し"/>
+  <Conversion Input="si" Output = "し"/>
+  <Conversion Input="syi" Output = "しぃ"/>
+  <Conversion Input="she" Output = "しぇ"/>
+  <Conversion Input="sye" Output = "しぇ"/>
+  <Conversion Input="sha" Output = "しゃ"/>
+  <Conversion Input="sya" Output = "しゃ"/>
+  <Conversion Input="shu" Output = "しゅ"/>
+  <Conversion Input="syu" Output = "しゅ"/>
+  <Conversion Input="syo" Output = "しょ"/>
+  <Conversion Input="sho" Output = "しょ"/>
+  <Conversion Input="ji" Output = "じ"/>
+  <Conversion Input="zi" Output = "じ"/>
+  <Conversion Input="jyi" Output = "じぃ"/>
+  <Conversion Input="zyi" Output = "じぃ"/>
+  <Conversion Input="je" Output = "じぇ"/>
+  <Conversion Input="jye" Output = "じぇ"/>
+  <Conversion Input="zye" Output = "じぇ"/>
+  <Conversion Input="ja" Output = "じゃ"/>
+  <Conversion Input="jya" Output = "じゃ"/>
+  <Conversion Input="zya" Output = "じゃ"/>
+  <Conversion Input="ju" Output = "じゅ"/>
+  <Conversion Input="jyu" Output = "じゅ"/>
+  <Conversion Input="zyu" Output = "じゅ"/>
+  <Conversion Input="jo" Output = "じょ"/>
+  <Conversion Input="jyo" Output = "じょ"/>
+  <Conversion Input="zyo" Output = "じょ"/>
+  <Conversion Input="su" Output = "す"/>
+  <Conversion Input="swa" Output = "すぁ"/>
+  <Conversion Input="swi" Output = "すぃ"/>
+  <Conversion Input="swu" Output = "すぅ"/>
+  <Conversion Input="swe" Output = "すぇ"/>
+  <Conversion Input="swo" Output = "すぉ"/>
+  <Conversion Input="zu" Output = "ず"/>
+  <Conversion Input="ce" Output = "せ"/>
+  <Conversion Input="se" Output = "せ"/>
+  <Conversion Input="ze" Output = "ぜ"/>
+  <Conversion Input="so" Output = "そ"/>
+  <Conversion Input="zo" Output = "ぞ"/>
+  <Conversion Input="ta" Output = "た"/>
+  <Conversion Input="da" Output = "だ"/>
+  <Conversion Input="chi" Output = "ち"/>
+  <Conversion Input="ti" Output = "ち"/>
+  <Conversion Input="cyi" Output = "ちぃ"/>
+  <Conversion Input="tyi" Output = "ちぃ"/>
+  <Conversion Input="che" Output = "ちぇ"/>
+  <Conversion Input="cye" Output = "ちぇ"/>
+  <Conversion Input="tye" Output = "ちぇ"/>
+  <Conversion Input="cha" Output = "ちゃ"/>
+  <Conversion Input="tya" Output = "ちゃ"/>
+  <Conversion Input="chu" Output = "ちゅ"/>
+  <Conversion Input="cyu" Output = "ちゅ"/>
+  <Conversion Input="tyu" Output = "ちゅ"/>
+  <Conversion Input="cho" Output = "ちょ"/>
+  <Conversion Input="cyo" Output = "ちょ"/>
+  <Conversion Input="tyo" Output = "ちょ"/>
+  <Conversion Input="di" Output = "ぢ"/>
+  <Conversion Input="dyi" Output = "ぢぃ"/>
+  <Conversion Input="dye" Output = "ぢぇ"/>
+  <Conversion Input="dya" Output = "ぢゃ"/>
+  <Conversion Input="dyu" Output = "ぢゅ"/>
+  <Conversion Input="dyo" Output = "ぢょ"/>
+  <Conversion Input="ltsu" Output = "っ"/>
+  <Conversion Input="xtu" Output = "っ"/>
+  <Conversion Input="tsu" Output = "つ"/>
+  <Conversion Input="tu" Output = "つ"/>
+  <Conversion Input="tsa" Output = "つぁ"/>
+  <Conversion Input="tsi" Output = "つぃ"/>
+  <Conversion Input="tse" Output = "つぇ"/>
+  <Conversion Input="tso" Output = "つぉ"/>
+  <Conversion Input="du" Output = "づ"/>
+  <Conversion Input="te" Output = "て"/>
+  <Conversion Input="thi" Output = "てぃ"/>
+  <Conversion Input="the" Output = "てぇ"/>
+  <Conversion Input="tha" Output = "てゃ"/>
+  <Conversion Input="thu" Output = "てゅ"/>
+  <Conversion Input="tho" Output = "てょ"/>
+  <Conversion Input="de" Output = "で"/>
+  <Conversion Input="dhi" Output = "でぃ"/>
+  <Conversion Input="dhe" Output = "でぇ"/>
+  <Conversion Input="dha" Output = "でゃ"/>
+  <Conversion Input="dhu" Output = "でゅ"/>
+  <Conversion Input="dho" Output = "でょ"/>
+  <Conversion Input="to" Output = "と"/>
+  <Conversion Input="twa" Output = "とぁ"/>
+  <Conversion Input="twi" Output = "とぃ"/>
+  <Conversion Input="twu" Output = "とぅ"/>
+  <Conversion Input="twe" Output = "とぇ"/>
+  <Conversion Input="two" Output = "とぉ"/>
+  <Conversion Input="do" Output = "ど"/>
+  <Conversion Input="dwa" Output = "どぁ"/>
+  <Conversion Input="dwi" Output = "どぃ"/>
+  <Conversion Input="dwu" Output = "どぅ"/>
+  <Conversion Input="dwe" Output = "どぇ"/>
+  <Conversion Input="dwo" Output = "どぉ"/>
+  <Conversion Input="na" Output = "な"/>
+  <Conversion Input="ni" Output = "に"/>
+  <Conversion Input="nyi" Output = "にぃ"/>
+  <Conversion Input="nye" Output = "にぇ"/>
+  <Conversion Input="nya" Output = "にゃ"/>
+  <Conversion Input="nyu" Output = "にゅ"/>
+  <Conversion Input="nyo" Output = "にょ"/>
+  <Conversion Input="nu" Output = "ぬ"/>
+  <Conversion Input="ne" Output = "ね"/>
+  <Conversion Input="no" Output = "の"/>
+  <Conversion Input="ha" Output = "は"/>
+  <Conversion Input="ba" Output = "ば"/>
+  <Conversion Input="pa" Output = "ぱ"/>
+  <Conversion Input="hi" Output = "ひ"/>
+  <Conversion Input="hyi" Output = "ひぃ"/>
+  <Conversion Input="hye" Output = "ひぇ"/>
+  <Conversion Input="hya" Output = "ひゃ"/>
+  <Conversion Input="hyu" Output = "ひゅ"/>
+  <Conversion Input="hyo" Output = "ひょ"/>
+  <Conversion Input="bi" Output = "び"/>
+  <Conversion Input="byi" Output = "びぃ"/>
+  <Conversion Input="bye" Output = "びぇ"/>
+  <Conversion Input="bya" Output = "びゃ"/>
+  <Conversion Input="byu" Output = "びゅ"/>
+  <Conversion Input="byo" Output = "びょ"/>
+  <Conversion Input="pi" Output = "ぴ"/>
+  <Conversion Input="pyi" Output = "ぴぃ"/>
+  <Conversion Input="pye" Output = "ぴぇ"/>
+  <Conversion Input="pya" Output = "ぴゃ"/>
+  <Conversion Input="pyu" Output = "ぴゅ"/>
+  <Conversion Input="pyo" Output = "ぴょ"/>
+  <Conversion Input="fu" Output = "ふ"/>
+  <Conversion Input="hu" Output = "ふ"/>
+  <Conversion Input="fa" Output = "ふぁ"/>
+  <Conversion Input="fwa" Output = "ふぁ"/>
+  <Conversion Input="fi" Output = "ふぃ"/>
+  <Conversion Input="fwi" Output = "ふぃ"/>
+  <Conversion Input="fyi" Output = "ふぃ"/>
+  <Conversion Input="fwu" Output = "ふぅ"/>
+  <Conversion Input="fe" Output = "ふぇ"/>
+  <Conversion Input="fo" Output = "ふぉ"/>
+  <Conversion Input="fwo" Output = "ふぉ"/>
+  <Conversion Input="fya" Output = "ふゃ"/>
+  <Conversion Input="fyu" Output = "ふゅ"/>
+  <Conversion Input="fyo" Output = "ふょ"/>
+  <Conversion Input="bu" Output = "ぶ"/>
+  <Conversion Input="pu" Output = "ぷ"/>
+  <Conversion Input="he" Output = "へ"/>
+  <Conversion Input="be" Output = "べ"/>
+  <Conversion Input="pe" Output = "ぺ"/>
+  <Conversion Input="ho" Output = "ほ"/>
+  <Conversion Input="bo" Output = "ぼ"/>
+  <Conversion Input="po" Output = "ぽ"/>
+  <Conversion Input="ma" Output = "ま"/>
+  <Conversion Input="mi" Output = "み"/>
+  <Conversion Input="myi" Output = "みぃ"/>
+  <Conversion Input="mye" Output = "みぇ"/>
+  <Conversion Input="mya" Output = "みゃ"/>
+  <Conversion Input="myu" Output = "みゅ"/>
+  <Conversion Input="myo" Output = "みょ"/>
+  <Conversion Input="mu" Output = "む"/>
+  <Conversion Input="me" Output = "め"/>
+  <Conversion Input="mo" Output = "も"/>
+  <Conversion Input="lya" Output = "ゃ"/>
+  <Conversion Input="xya" Output = "ゃ"/>
+  <Conversion Input="ya" Output = "や"/>
+  <Conversion Input="lyu" Output = "ゅ"/>
+  <Conversion Input="xyu" Output = "ゅ"/>
+  <Conversion Input="yu" Output = "ゆ"/>
+  <Conversion Input="lyo" Output = "ょ"/>
+  <Conversion Input="xyo" Output = "ょ"/>
+  <Conversion Input="yo" Output = "よ"/>
+  <Conversion Input="ra" Output = "ら"/>
+  <Conversion Input="ri" Output = "り"/>
+  <Conversion Input="ryi" Output = "りぃ"/>
+  <Conversion Input="rye" Output = "りぇ"/>
+  <Conversion Input="rya" Output = "りゃ"/>
+  <Conversion Input="ryu" Output = "りゅ"/>
+  <Conversion Input="ryo" Output = "りょ"/>
+  <Conversion Input="ru" Output = "る"/>
+  <Conversion Input="re" Output = "れ"/>
+  <Conversion Input="ro" Output = "ろ"/>
+  <Conversion Input="lwa" Output = "ゎ"/>
+  <Conversion Input="xwa" Output = "ゎ"/>
+  <Conversion Input="wa" Output = "わ"/>
+  <Conversion Input="wyi" Output = "ゐ"/>
+  <Conversion Input="wye" Output = "ゑ"/>
+  <Conversion Input="wo" Output = "を"/>
+  <Conversion Input="nn" Output = "ん"/>
+  <Conversion Input="xn" Output = "ん"/>
+  <Conversion Input="vu" Output = "ゔ"/>
+  <Conversion Input="va" Output = "ゔぁ"/>
+  <Conversion Input="vi" Output = "ゔぃ"/>
+  <Conversion Input="vyi" Output = "ゔぃ"/>
+  <Conversion Input="ve" Output = "ゔぇ"/>
+  <Conversion Input="vye" Output = "ゔぇ"/>
+  <Conversion Input="vo" Output = "ゔぉ"/>
+  <Conversion Input="vya" Output = "ゔゃ"/>
+  <Conversion Input="vyu" Output = "ゔゅ"/>
+  <Conversion Input="vyo" Output = "ゔょ"/>
+  <Conversion Input="lka" Output = "ヵ"/>
+  <Conversion Input="xka" Output = "ヵ"/>
+  <Conversion Input="lke" Output = "ヶ"/>
+  <Conversion Input="xke" Output = "ヶ"/>
+  <Conversion Input="qyo" Output = "くょ"/>
+  
+  
+  
+  <Conversion Input = "lla" Output = "っぁ"/>
+  <Conversion Input = "xxa" Output = "っぁ"/>
+  <Conversion Input = "lli" Output = "っぃ"/>
+  <Conversion Input = "llyi" Output = "っぃ"/>
+  <Conversion Input = "xxi" Output= "っぃ"/>
+  <Conversion Input = "xxyi" Output= "っぃ"/>
+  
+  <Conversion Input = "yyi" Output= "っい"/>
+  <Conversion Input="yye" Output = "っいぇ"/>
+  <Conversion Input="llu" Output = "っぅ"/>
+  <Conversion Input="xxu" Output = "っぅ"/>
+  
+  <Conversion Input="wwhu" Output = "っう"/>
+  <Conversion Input="wwu" Output = "っう"/>
+  <Conversion Input="wwha" Output = "っうぁ"/>
+  <Conversion Input="wwi" Output = "っうぃ"/>
+  <Conversion Input="wwe" Output = "っうぇ"/>
+  <Conversion Input="wwhe" Output = "っうぇ"/>
+  <Conversion Input="wwho" Output = "っうぉ"/>
+  <Conversion Input="lle" Output = "っぇ"/>
+  <Conversion Input="llye" Output = "っぇ"/>
+  <Conversion Input="xxe" Output = "っぇ"/>
+  <Conversion Input="xxye" Output = "っぇ"/>
+  
+  <Conversion Input="llo" Output = "っぉ"/>
+  <Conversion Input="xxo" Output = "っぉ"/>
+
+  <Conversion Input="kka" Output = "っか"/>
+  <Conversion Input="gga" Output = "っが"/>
+  <Conversion Input="kki" Output = "っき"/>
+  <Conversion Input="kkyi" Output = "っきぃ"/>
+  <Conversion Input="kkye" Output = "っきぇ"/>
+  <Conversion Input="kkya" Output = "っきゃ"/>
+  <Conversion Input="kkyu" Output = "っきゅ"/>
+  <Conversion Input="kkyo" Output = "っきょ"/>
+  <Conversion Input="ggi" Output = "っぎ"/>
+  <Conversion Input="ggyi" Output = "っぎぃ"/>
+  <Conversion Input="ggye" Output = "っぎぇ"/>
+  <Conversion Input="ggya" Output = "っぎゃ"/>
+  <Conversion Input="ggyu" Output = "っぎゅ"/>
+  <Conversion Input="ggyo" Output = "っぎょ"/>
+  <Conversion Input="ccu" Output = "っく"/>
+  <Conversion Input="kku" Output = "っく"/>
+  <Conversion Input="qqu" Output = "っく"/>
+  <Conversion Input="kkwa" Output = "っくぁ"/>
+  <Conversion Input="qqa" Output = "っくぁ"/>
+  <Conversion Input="qqwa" Output = "っくぁ"/>
+  <Conversion Input="qqi" Output = "っくぃ"/>
+  <Conversion Input="qqwi" Output = "っくぃ"/>
+  <Conversion Input="qqyi" Output = "っくぃ"/>
+  <Conversion Input="qqwu" Output = "っくぅ"/>
+  <Conversion Input="qqe" Output = "っくぇ"/>
+  <Conversion Input="qqo" Output = "っくぉ"/>
+  <Conversion Input="qqya" Output = "っくゃ"/>
+  <Conversion Input="qqyu" Output = "っくゅ"/>
+  <Conversion Input="ggu" Output = "っぐ"/>
+  <Conversion Input="ggwa" Output = "っぐぁ"/>
+  <Conversion Input="ggwi" Output = "っぐぃ"/>
+  <Conversion Input="ggwu" Output = "っぐぅ"/>
+  <Conversion Input="ggwe" Output = "っぐぇ"/>
+  <Conversion Input="ggwo" Output = "っぐぉ"/>
+  <Conversion Input="kke" Output = "っけ"/>
+  <Conversion Input="gge" Output = "っげ"/>
+  <Conversion Input="cco" Output = "っこ"/>
+  <Conversion Input="kko" Output = "っこ"/>
+  <Conversion Input="ggo" Output = "っご"/>
+  <Conversion Input="ssa" Output = "っさ"/>
+  <Conversion Input="zza" Output = "っざ"/>
+  <Conversion Input="cci" Output = "っし"/>
+  <Conversion Input="sshi" Output = "っし"/>
+  <Conversion Input="ssi" Output = "っし"/>
+  <Conversion Input="ssyi" Output = "っしぃ"/>
+  <Conversion Input="sshe" Output = "っしぇ"/>
+  <Conversion Input="ssye" Output = "っしぇ"/>
+  <Conversion Input="ssha" Output = "っしゃ"/>
+  <Conversion Input="ssya" Output = "っしゃ"/>
+  <Conversion Input="sshu" Output = "っしゅ"/>
+  <Conversion Input="ssyu" Output = "っしゅ"/>
+  <Conversion Input="ssyo" Output = "っしょ"/>
+  <Conversion Input="ssho" Output = "っしょ"/>
+  <Conversion Input="jji" Output = "っじ"/>
+  <Conversion Input="zzi" Output = "っじ"/>
+  <Conversion Input="jjyi" Output = "っじぃ"/>
+  <Conversion Input="zzyi" Output = "っじぃ"/>
+  <Conversion Input="jje" Output = "っじぇ"/>
+  <Conversion Input="jjye" Output = "っじぇ"/>
+  <Conversion Input="zzye" Output = "っじぇ"/>
+  <Conversion Input="jja" Output = "っじゃ"/>
+  <Conversion Input="jjya" Output = "っじゃ"/>
+  <Conversion Input="zzya" Output = "っじゃ"/>
+  <Conversion Input="jju" Output = "っじゅ"/>
+  <Conversion Input="jjyu" Output = "っじゅ"/>
+  <Conversion Input="zzyu" Output = "っじゅ"/>
+  <Conversion Input="jjo" Output = "っじょ"/>
+  <Conversion Input="jjyo" Output = "っじょ"/>
+  <Conversion Input="zzyo" Output = "っじょ"/>
+  <Conversion Input="ssu" Output = "っす"/>
+  <Conversion Input="sswa" Output = "っすぁ"/>
+  <Conversion Input="sswi" Output = "っすぃ"/>
+  <Conversion Input="sswu" Output = "っすぅ"/>
+  <Conversion Input="sswe" Output = "っすぇ"/>
+  <Conversion Input="sswo" Output = "っすぉ"/>
+  <Conversion Input="zzu" Output = "っず"/>
+  <Conversion Input="cce" Output = "っせ"/>
+  <Conversion Input="sse" Output = "っせ"/>
+  <Conversion Input="zze" Output = "っぜ"/>
+  <Conversion Input="sso" Output = "っそ"/>
+  <Conversion Input="zzo" Output = "っぞ"/>
+  <Conversion Input="tta" Output = "った"/>
+  <Conversion Input="dda" Output = "っだ"/>
+  <Conversion Input="cchi" Output = "っち"/>
+  <Conversion Input="tti" Output = "っち"/>
+  <Conversion Input="ccyi" Output = "っちぃ"/>
+  <Conversion Input="ttyi" Output = "っちぃ"/>
+  <Conversion Input="cche" Output = "っちぇ"/>
+  <Conversion Input="ccye" Output = "っちぇ"/>
+  <Conversion Input="ttye" Output = "っちぇ"/>
+  <Conversion Input="ccha" Output = "っちゃ"/>
+  <Conversion Input="ttya" Output = "っちゃ"/>
+  <Conversion Input="cchu" Output = "っちゅ"/>
+  <Conversion Input="ccyu" Output = "っちゅ"/>
+  <Conversion Input="ttyu" Output = "っちゅ"/>
+  <Conversion Input="ccho" Output = "っちょ"/>
+  <Conversion Input="ccyo" Output = "っちょ"/>
+  <Conversion Input="ttyo" Output = "っちょ"/>
+  <Conversion Input="ddi" Output = "っぢ"/>
+  <Conversion Input="ddyi" Output = "っぢぃ"/>
+  <Conversion Input="ddye" Output = "っぢぇ"/>
+  <Conversion Input="ddya" Output = "っぢゃ"/>
+  <Conversion Input="ddyu" Output = "っぢゅ"/>
+  <Conversion Input="ddyo" Output = "っぢょ"/>
+  
+  <Conversion Input="xxtu" Output = "っっ"/>
+  <Conversion Input="ttsu" Output = "っつ"/>
+  <Conversion Input="ttu" Output = "っつ"/>
+  <Conversion Input="ttsa" Output = "っつぁ"/>
+  <Conversion Input="ttsi" Output = "っつぃ"/>
+  <Conversion Input="ttse" Output = "っつぇ"/>
+  <Conversion Input="ttso" Output = "っつぉ"/>
+  <Conversion Input="ddu" Output = "っづ"/>
+  <Conversion Input="tte" Output = "って"/>
+  <Conversion Input="tthi" Output = "ってぃ"/>
+  <Conversion Input="tthe" Output = "ってぇ"/>
+  <Conversion Input="ttha" Output = "ってゃ"/>
+  <Conversion Input="tthu" Output = "ってゅ"/>
+  <Conversion Input="ttho" Output = "ってょ"/>
+  <Conversion Input="dde" Output = "っで"/>
+  <Conversion Input="ddhi" Output = "っでぃ"/>
+  <Conversion Input="ddhe" Output = "っでぇ"/>
+  <Conversion Input="ddha" Output = "っでゃ"/>
+  <Conversion Input="ddhu" Output = "っでゅ"/>
+  <Conversion Input="ddho" Output = "っでょ"/>
+  <Conversion Input="tto" Output = "っと"/>
+  <Conversion Input="ttwa" Output = "っとぁ"/>
+  <Conversion Input="ttwi" Output = "っとぃ"/>
+  <Conversion Input="ttwu" Output = "っとぅ"/>
+  <Conversion Input="ttwe" Output = "っとぇ"/>
+  <Conversion Input="ttwo" Output = "っとぉ"/>
+  <Conversion Input="ddo" Output = "っど"/>
+  <Conversion Input="ddwa" Output = "っどぁ"/>
+  <Conversion Input="ddwi" Output = "っどぃ"/>
+  <Conversion Input="ddwu" Output = "っどぅ"/>
+  <Conversion Input="ddwe" Output = "っどぇ"/>
+  <Conversion Input="ddwo" Output = "っどぉ"/>
+  <Conversion Input="nna" Output = "んあ"/>
+  <Conversion Input="nni" Output = "んい"/>
+  <Conversion Input="nnyi" Output = "んい"/>
+  <Conversion Input="nnye" Output = "んいぇ"/>
+  <Conversion Input="nnya" Output = "んや"/>
+  <Conversion Input="nnyu" Output = "んゆ"/>
+  <Conversion Input="nnyo" Output = "んよ"/>
+  <Conversion Input="nnu" Output = "んう"/>
+  <Conversion Input="nne" Output = "んえ"/>
+  <Conversion Input="nno" Output = "んお"/>
+  <Conversion Input="hha" Output = "っは"/>
+  <Conversion Input="bba" Output = "っば"/>
+  <Conversion Input="ppa" Output = "っぱ"/>
+  <Conversion Input="hhi" Output = "っひ"/>
+  <Conversion Input="hhyi" Output = "っひぃ"/>
+  <Conversion Input="hhye" Output = "っひぇ"/>
+  <Conversion Input="hhya" Output = "っひゃ"/>
+  <Conversion Input="hhyu" Output = "っひゅ"/>
+  <Conversion Input="hhyo" Output = "っひょ"/>
+  <Conversion Input="bbi" Output = "っび"/>
+  <Conversion Input="bbyi" Output = "っびぃ"/>
+  <Conversion Input="bbye" Output = "っびぇ"/>
+  <Conversion Input="bbya" Output = "っびゃ"/>
+  <Conversion Input="bbyu" Output = "っびゅ"/>
+  <Conversion Input="bbyo" Output = "っびょ"/>
+  <Conversion Input="ppi" Output = "っぴ"/>
+  <Conversion Input="ppyi" Output = "っぴぃ"/>
+  <Conversion Input="ppye" Output = "っぴぇ"/>
+  <Conversion Input="ppya" Output = "っぴゃ"/>
+  <Conversion Input="ppyu" Output = "っぴゅ"/>
+  <Conversion Input="ppyo" Output = "っぴょ"/>
+  <Conversion Input="ffu" Output = "っふ"/>
+  <Conversion Input="hhu" Output = "っふ"/>
+  <Conversion Input="ffa" Output = "っふぁ"/>
+  <Conversion Input="ffwa" Output = "っふぁ"/>
+  <Conversion Input="ffi" Output = "っふぃ"/>
+  <Conversion Input="ffwi" Output = "っふぃ"/>
+  <Conversion Input="ffyi" Output = "っふぃ"/>
+  <Conversion Input="ffwu" Output = "っふぅ"/>
+  <Conversion Input="ffe" Output = "っふぇ"/>
+  <Conversion Input="ffo" Output = "っふぉ"/>
+  <Conversion Input="ffwo" Output = "っふぉ"/>
+  <Conversion Input="ffya" Output = "っふゃ"/>
+  <Conversion Input="ffyu" Output = "っふゅ"/>
+  <Conversion Input="ffyo" Output = "っふょ"/>
+  <Conversion Input="bbu" Output = "っぶ"/>
+  <Conversion Input="ppu" Output = "っぷ"/>
+  <Conversion Input="hhe" Output = "っへ"/>
+  <Conversion Input="bbe" Output = "っべ"/>
+  <Conversion Input="ppe" Output = "っぺ"/>
+  <Conversion Input="hho" Output = "っほ"/>
+  <Conversion Input="bbo" Output = "っぼ"/>
+  <Conversion Input="ppo" Output = "っぽ"/>
+  <Conversion Input="mma" Output = "っま"/>
+  <Conversion Input="mmi" Output = "っみ"/>
+  <Conversion Input="mmyi" Output = "っみぃ"/>
+  <Conversion Input="mmye" Output = "っみぇ"/>
+  <Conversion Input="mmya" Output = "っみゃ"/>
+  <Conversion Input="mmyu" Output = "っみゅ"/>
+  <Conversion Input="mmyo" Output = "っみょ"/>
+  <Conversion Input="mmu" Output = "っむ"/>
+  <Conversion Input="mme" Output = "っめ"/>
+  <Conversion Input="mmo" Output = "っも"/>
+  <Conversion Input="llya" Output = "っゃ"/>
+  <Conversion Input="xxya" Output = "っゃ"/>
+  <Conversion Input="yya" Output = "っや"/>
+  <Conversion Input="llyu" Output = "っゅ"/>
+  <Conversion Input="xxyu" Output = "っゅ"/>
+  <Conversion Input="yyu" Output = "っゆ"/>
+  <Conversion Input="llyo" Output = "っょ"/>
+  <Conversion Input="xxyo" Output = "っょ"/>
+  <Conversion Input="yyo" Output = "っよ"/>
+  <Conversion Input="rra" Output = "っら"/>
+  <Conversion Input="rri" Output = "っり"/>
+  <Conversion Input="rryi" Output = "っりぃ"/>
+  <Conversion Input="rrye" Output = "っりぇ"/>
+  <Conversion Input="rrya" Output = "っりゃ"/>
+  <Conversion Input="rryu" Output = "っりゅ"/>
+  <Conversion Input="rryo" Output = "っりょ"/>
+  <Conversion Input="rru" Output = "っる"/>
+  <Conversion Input="rre" Output = "っれ"/>
+  <Conversion Input="rro" Output = "っろ"/>
+  <Conversion Input="llwa" Output = "っゎ"/>
+  <Conversion Input="xxwa" Output = "っゎ"/>
+  <Conversion Input="wwa" Output = "っわ"/>
+  <Conversion Input="wwyi" Output = "っゐ"/>
+  <Conversion Input="wwye" Output = "っゑ"/>
+  <Conversion Input="wwo" Output = "っを"/>
+  <Conversion Input="n" Output = "ん"/>
+  <Conversion Input="xxn" Output = "っん"/>
+  <Conversion Input="vvu" Output = "っゔ"/>
+  <Conversion Input="vva" Output = "っヴぁ"/>
+  <Conversion Input="vvi" Output = "っヴぃ"/>
+  <Conversion Input="vvyi" Output = "っヴぃ"/>
+  <Conversion Input="vve" Output = "っヴぇ"/>
+  <Conversion Input="vvye" Output = "っヴぇ"/>
+  <Conversion Input="vvo" Output = "っヴぉ"/>
+  <Conversion Input="vvya" Output = "っヴゃ"/>
+  <Conversion Input="vvyu" Output = "っヴゅ"/>
+  <Conversion Input="vvyo" Output = "っヴょ"/>
+  <Conversion Input="llka" Output = "っヵ"/>
+  <Conversion Input="xxka" Output = "っヵ"/>
+  <Conversion Input="llke" Output = "っヶ"/>
+  <Conversion Input="xxke" Output = "っヶ"/>
+  <Conversion Input="qqyo" Output = "っくょ"/>
+</ConversionTable>
+</AutoConverterConfig>

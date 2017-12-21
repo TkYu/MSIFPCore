@@ -6,7 +6,13 @@
     /// </remarks>
     public enum ChineseConversionDirection
     {
+        /// <summary>
+        /// 简体转换为繁体
+        /// </summary>
         SimplifiedToTraditional,
+        /// <summary>
+        /// 繁體轉換為簡體
+        /// </summary>
         TraditionalToSimplified
     }
 }

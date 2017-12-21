@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSIFPCore", "MSIFPCore\MSIF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChnCharInfo", "ChnCharInfo\ChnCharInfo.csproj", "{2831B943-07BE-4E97-AFE5-76D5F839D8B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseConverter", "ChineseConverter\ChineseConverter.csproj", "{B69F217A-5CAF-4FC2-AFEB-ACF5E3E28165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChineseConverter", "ChineseConverter\ChineseConverter.csproj", "{B69F217A-5CAF-4FC2-AFEB-ACF5E3E28165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JpnKanaConversion", "JpnKanaConversion\JpnKanaConversion.csproj", "{234A9ACA-552C-4078-9FC7-B17D4443EACE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B69F217A-5CAF-4FC2-AFEB-ACF5E3E28165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B69F217A-5CAF-4FC2-AFEB-ACF5E3E28165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B69F217A-5CAF-4FC2-AFEB-ACF5E3E28165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234A9ACA-552C-4078-9FC7-B17D4443EACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

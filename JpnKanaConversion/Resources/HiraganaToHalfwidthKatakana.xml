@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AutoConverterConfig>
+  <StateMachineConfig EntryState="0" CharSet="[あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉっゃゅょゔ\u3099\u309A]">
+    <State ID="0" >
+      <StateTransition ID="0">
+        <InputValidators>
+          <Regex>[あいえおぁぃぅぇぉなにぬねのまみむめもやゆよらりるれろがぎぐげござじずぜぞだぢっづでどばぱびぴぶぷべぺぼぽゃゅょんゔ\u3099\u309A]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>AppendInput</Action>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="1">
+        <InputValidators>
+          <Regex>[うかきくけこさしすせそたちつてとわを]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>AppendInput</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="2">
+        <InputValidators>
+          <Regex>[はひふへほ]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>AppendInput</Action>
+        </Actions>
+      </StateTransition>
+    </State>
+    <State ID="1" >
+      <StateTransition ID="0">
+        <InputValidators>
+          <Regex>[あいえおぁぃぅぇぉなにぬねのまみむめもやゆよらりるれろがぎぐげござじずぜぞだぢっづでどばぱびぴぶぷべぺぼぽゃゅょんゔ\u309A]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+          <Action>AppendInput</Action>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="0">
+        <InputValidators>
+          <Regex>[\u3099]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>AppendInput</Action>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="1">
+        <InputValidators>
+          <Regex>[うかきくけこさしすせそたちつてとわを]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+          <Action>AppendInput</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="2">
+        <InputValidators>
+          <Regex>[はひふへほ]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+          <Action>AppendInput</Action>
+        </Actions>
+      </StateTransition>
+    </State>
+    <State ID="2" >
+      <StateTransition ID="0">
+        <InputValidators>
+          <Regex>[あいえおぁぃぅぇぉなにぬねのまみむめもやゆよらりるれろがぎぐげござじずぜぞだぢっづでどばぱびぴぶぷべぺぼぽゃゅょんゔ]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+          <Action>AppendInput</Action>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="0">
+        <InputValidators>
+          <Regex>[\u3099\u309A]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>AppendInput</Action>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="1">
+        <InputValidators>
+          <Regex>[うかきくけこさしすせそたちつてとわを]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+          <Action>AppendInput</Action>
+        </Actions>
+      </StateTransition>
+      <StateTransition ID="2">
+        <InputValidators>
+          <Regex>[はひふへほ]</Regex>
+        </InputValidators>
+        <Actions>
+          <Action>ConvertToOutput</Action>
+          <Action>Clear</Action>
+          <Action>AppendInput</Action>
+        </Actions>
+      </StateTransition>
+    </State>
+  </StateMachineConfig>
+  <ConversionTable>
+    <Conversion Input="" Output=""/>
+    <Conversion Input="ぁ" Output="ｧ"/>
+    <Conversion Input="あ" Output="ｱ"/>    
+    <Conversion Input="ぃ" Output="ｨ"/>
+    <Conversion Input="い" Output="ｲ"/>   
+    <Conversion Input="ぅ" Output="ｩ"/>
+    <Conversion Input="う" Output="ｳ"/>   
+    <Conversion Input="ぇ" Output="ｪ"/>  
+    <Conversion Input="え" Output="ｴ"/>    
+    <Conversion Input="ぉ" Output="ｫ"/>
+    <Conversion Input="お" Output="ｵ"/>    
+    <Conversion Input="か" Output="ｶ"/>
+    <Conversion Input="か\u3099" Output="ｶﾞ"/>   
+    <Conversion Input="が" Output="ｶﾞ"/>
+    <Conversion Input="き" Output="ｷ"/>
+    <Conversion Input="き\u3099" Output="ｷﾞ"/>  
+    <Conversion Input="ぎ" Output="ｷﾞ"/>
+    <Conversion Input="く" Output="ｸ"/>
+    <Conversion Input="く\u3099" Output="ｸﾞ"/>
+    <Conversion Input="ぐ" Output="ｸﾞ"/>
+    <Conversion Input="け" Output="ｹ"/>
+    <Conversion Input="け\u3099" Output="ｹﾞ"/>
+    <Conversion Input="げ" Output="ｹﾞ"/>
+    <Conversion Input="こ" Output="ｺ"/>
+    <Conversion Input="こ\u3099" Output="ｺﾞ"/>
+    <Conversion Input="ご" Output="ｺﾞ"/>
+    <Conversion Input="さ" Output="ｻ"/>
+    <Conversion Input="さ\u3099" Output="ｻﾞ"/>
+    <Conversion Input="ざ" Output="ｻﾞ"/>
+    <Conversion Input="し" Output="ｼ"/>
+    <Conversion Input="し\u3099" Output="ｼﾞ"/>
+    <Conversion Input="じ" Output="ｼﾞ"/>
+    <Conversion Input="す" Output="ｽ"/>
+    <Conversion Input="す\u3099" Output="ｽﾞ"/>
+    <Conversion Input="ず" Output="ｽﾞ"/>
+    <Conversion Input="せ" Output="ｾ"/>
+    <Conversion Input="せ\u3099" Output="ｾﾞ"/>
+    <Conversion Input="ぜ" Output="ｾﾞ"/>
+    <Conversion Input="そ" Output="ｿ"/>
+    <Conversion Input="そ\u3099" Output="ｿﾞ"/>
+    <Conversion Input="ぞ" Output="ｿﾞ"/>
+    <Conversion Input="た" Output="ﾀ"/>
+    <Conversion Input="た\u3099" Output="ﾀﾞ"/>
+    <Conversion Input="だ" Output="ﾀﾞ"/>
+    <Conversion Input="ち" Output="ﾁ"/>
+    <Conversion Input="ち\u3099" Output="ﾁﾞ"/>
+    <Conversion Input="ぢ" Output="ﾁﾞ"/> 
+    <Conversion Input="っ" Output="ｯ"/>
+    <Conversion Input="つ" Output="ﾂ"/>
+    <Conversion Input="つ\u3099" Output="ﾂﾞ"/>
+    <Conversion Input="づ" Output="ﾂﾞ"/>
+    <Conversion Input="て" Output="ﾃ"/>
+    <Conversion Input="て\u3099" Output="ﾃﾞ"/>
+    <Conversion Input="で" Output="ﾃﾞ"/>
+    <Conversion Input="と" Output="ﾄ"/>
+    <Conversion Input="と\u3099" Output="ﾄﾞ"/>
+    <Conversion Input="ど" Output="ﾄﾞ"/>
+    <Conversion Input="な" Output="ﾅ"/>
+    <Conversion Input="に" Output="ﾆ"/>
+    <Conversion Input="ぬ" Output="ﾇ"/>
+    <Conversion Input="ね" Output="ﾈ"/>
+    <Conversion Input="の" Output="ﾉ"/>
+    <Conversion Input="は" Output="ﾊ"/>
+    <Conversion Input="は\u3099" Output="ﾊﾞ"/>   
+    <Conversion Input="ば" Output="ﾊﾞ"/>
+    <Conversion Input="は\u309A" Output="ﾊﾟ"/>
+    <Conversion Input="ぱ" Output="ﾊﾟ"/>
+    <Conversion Input="ひ" Output="ﾋ"/>
+    <Conversion Input="ひ\u3099" Output="ﾋﾞ"/>   
+    <Conversion Input="び" Output="ﾋﾞ"/>
+    <Conversion Input="ひ\u309A" Output="ﾋﾟ"/>    
+    <Conversion Input="ぴ" Output="ﾋﾟ"/>
+    <Conversion Input="ふ" Output="ﾌ"/>
+    <Conversion Input="ふ\u3099" Output="ﾌﾞ"/>
+    <Conversion Input="ぶ" Output="ﾌﾞ"/>
+    <Conversion Input="ふ\u309A" Output="ﾌﾟ"/>
+    <Conversion Input="ぷ" Output="ﾌﾟ"/>
+    <Conversion Input="へ" Output="ﾍ"/>
+    <Conversion Input="へ\u3099" Output="ﾍﾞ"/>
+    <Conversion Input="べ" Output="ﾍﾞ"/>
+    <Conversion Input="へ\u309A" Output="ﾍﾟ"/>
+    <Conversion Input="ぺ" Output="ﾍﾟ"/>
+    <Conversion Input="ほ" Output="ﾎ"/>
+    <Conversion Input="ほ\u3099" Output="ﾎﾞ"/>
+    <Conversion Input="ぼ" Output="ﾎﾞ"/>
+    <Conversion Input="ほ\u309A" Output="ﾎﾟ"/>
+    <Conversion Input="ぽ" Output="ﾎﾟ"/>
+    <Conversion Input="ま" Output="ﾏ"/>
+    <Conversion Input="み" Output="ﾐ"/>
+    <Conversion Input="む" Output="ﾑ"/>
+    <Conversion Input="め" Output="ﾒ"/>
+    <Conversion Input="も" Output="ﾓ"/>
+    <Conversion Input="ゃ" Output="ｬ"/>
+    <Conversion Input="や" Output="ﾔ"/>
+    <Conversion Input="ゅ" Output="ｭ"/>
+    <Conversion Input="ゆ" Output="ﾕ"/>
+    <Conversion Input="ょ" Output="ｮ"/>
+    <Conversion Input="よ" Output="ﾖ"/>
+    <Conversion Input="ら" Output="ﾗ"/>
+    <Conversion Input="り" Output="ﾘ"/>
+    <Conversion Input="る" Output="ﾙ"/>
+    <Conversion Input="れ" Output="ﾚ"/>
+    <Conversion Input="ろ" Output="ﾛ"/>
+    <Conversion Input="わ" Output="ﾜ"/>
+    <Conversion Input="わ\u3099" Output="ﾜﾞ"/>
+    <Conversion Input="を" Output="ｦ"/>
+    <Conversion Input="を\u3099" Output="ｦﾞ"/>
+    <Conversion Input="ん" Output="ﾝ"/>
+    <Conversion Input="う\u3099" Output="ｳﾞ"/>
+    <Conversion Input="ゔ" Output="ｳﾞ"/>
+    <Conversion Input="\u3099" Output="ﾞ"/>
+    <Conversion Input="\u309A" Output="ﾟ"/>
+  </ConversionTable>
+</AutoConverterConfig>
