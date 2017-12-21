@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChineseConverter\ChineseConverter.csproj" />
+    <ProjectReference Include="..\ChnCharInfo\ChnCharInfo.csproj" />
+  </ItemGroup>
+
 </Project>

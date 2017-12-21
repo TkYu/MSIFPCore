@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.International.Converters.TraditionalChineseToSimplifiedConverter;
 
 namespace MSIFPCore
 {
@@ -6,7 +7,7 @@ namespace MSIFPCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(ChineseConverter.Convert("头发发财",ChineseConversionDirection.SimplifiedToTraditional));
         }
     }
 }
